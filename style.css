@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.contanier {
+  display: grid;
+  grid-template-columns: repeat(9, 100px);
+  grid-template-rows: repeat(4, 100px);
+  grid-template-areas:
+    "yell  yell2 empty empty empty empty  db ct  si"
+    " wk  sp tw tc gt yn ll  te wu "
+    " cv dg tg gg ex so cd cp tr "
+    " . in mu me no re rd st ad";
+
+  gap: 5px;
+  justify-content: center;
+}
+
+.yellow {
+  border: 3px solid orange;
+  font-size: 18px;
+  font-weight: bold;
+  /* background-color: yellow; */
+  text-transform: capitalize;
+  text-align: center;
+  color: orange;
+}
+
+#y1 {
+  grid-area: yell;
+}
+#y2 {
+  grid-area: yell2;
+}
+#db {
+  grid-area: db;
+}
+#empty {
+  grid-area: empty;
+  grid-column: 2/10;
+}
+#ct {
+  grid-area: ct;
+}
+#si {
+  grid-area: si;
+}
+#wk {
+  grid-area: wk;
+}
+
+#sp {
+  grid-area: sp;
+}
+
+#tw {
+  grid-area: tw;
+}
+#tc {
+  grid-area: tc;
+}
+#gt {
+  grid-area: gt;
+}
+#yn {
+  grid-area: yn;
+}
+#ll {
+  grid-area: ll;
+}
+#te {
+  grid-area: te;
+}
+#wu {
+  grid-area: wu;
+}
+#cv {
+  grid-area: cv;
+}
+#dg {
+  grid-area: dg;
+}
+
+#tg {
+  grid-area: tg;
+}
+#gg {
+  grid-area: gg;
+}
+#ex {
+  grid-area: ex;
+}
+#so {
+  grid-area: so;
+}
+#cd {
+  grid-area: cd;
+}
+#cp {
+  grid-area: cp;
+}
+#tr {
+  grid-area: tr;
+}
+#in {
+  grid-area: in;
+}
+#mu {
+  grid-area: mu;
+}
+#me {
+  grid-area: me;
+}
+#no {
+  grid-area: no;
+}
+#re {
+  grid-area: re;
+}
+#rd {
+  grid-area: rd;
+}
+#st {
+  grid-area: st;
+}
+#ad {
+  grid-area: ad;
+}
+.red {
+  border: 3px solid red;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: red;
+
+
+text-align: center;}
+.green {
+  border: 3px solid green;
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+}
+.blue {
+  border: 3px solid blue;
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+}
