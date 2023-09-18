@@ -5,150 +5,62 @@
 }
 .contanier {
   display: grid;
-  grid-template-columns: repeat(9, 100px);
-  grid-template-rows: repeat(4, 100px);
-  grid-template-areas:
-    "yell  yell2 empty empty empty empty  db ct  si"
-    " wk  sp tw tc gt yn ll  te wu "
-    " cv dg tg gg ex so cd cp tr "
-    " . in mu me no re rd st ad";
-
-  gap: 5px;
-  justify-content: center;
+  height: 80vh;
+  background-color: #000;
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: repeat(3, 120px);
+  gap: 10px;
+  padding: 10px;
+  grid-template-areas: "frd frd blu blu blu blu blu brwn brwn brwn brwn brwn"
+                        "br br whte whte whte whte whte whte whte whte rd rd "
+                        "wte wte re re re re re re re  lu lu lu";
 }
-
-.yellow {
-  border: 3px solid orange;
-  font-size: 18px;
-  font-weight: bold;
-  /* background-color: yellow; */
-  text-transform: capitalize;
-  text-align: center;
-  color: orange;
+.rd1 {
+  background-color: red;
+  grid-area: frd;
+  grid-row: 1/3;
 }
-
-#y1 {
-  grid-area: yell;
+.blu1 {
+  background-color: blue;
+  grid-area: blu;
 }
-#y2 {
-  grid-area: yell2;
+.brwn1 {
+  background-color: brown;
+  grid-area: brwn;
 }
-#db {
-  grid-area: db;
+.brwn2 {
+  background-color: brown;
+  grid-area: br;
+  grid-column: 3/6;
+  grid-row: 2/4;
 }
-#empty {
-  grid-area: empty;
-  grid-column: 2/10;
+.whte1 {
+  background-color: #fff;
+  grid-area: whte;
+  grid-column: 6/11;
+  /* height: 50vh; */
+  grid-row: 2/4;
 }
-#ct {
-  grid-area: ct;
-}
-#si {
-  grid-area: si;
-}
-#wk {
-  grid-area: wk;
-}
-
-#sp {
-  grid-area: sp;
-}
-
-#tw {
-  grid-area: tw;
-}
-#tc {
-  grid-area: tc;
-}
-#gt {
-  grid-area: gt;
-}
-#yn {
-  grid-area: yn;
-}
-#ll {
-  grid-area: ll;
-}
-#te {
-  grid-area: te;
-}
-#wu {
-  grid-area: wu;
-}
-#cv {
-  grid-area: cv;
-}
-#dg {
-  grid-area: dg;
-}
-
-#tg {
-  grid-area: tg;
-}
-#gg {
-  grid-area: gg;
-}
-#ex {
-  grid-area: ex;
-}
-#so {
-  grid-area: so;
-}
-#cd {
-  grid-area: cd;
-}
-#cp {
-  grid-area: cp;
-}
-#tr {
-  grid-area: tr;
-}
-#in {
-  grid-area: in;
-}
-#mu {
-  grid-area: mu;
-}
-#me {
-  grid-area: me;
-}
-#no {
-  grid-area: no;
-}
-#re {
-  grid-area: re;
-}
-#rd {
+.rd2 {
+  background-color: red;
   grid-area: rd;
+  grid-row: 2/5;
 }
-#st {
-  grid-area: st;
+.whte2{
+    background-color: #fff;
+    grid-area: wte;
+    grid-row: 3/5;
+    
 }
-#ad {
-  grid-area: ad;
+.rd3{
+    background-color: red;
+    grid-area: re;
+    grid-column: 3/8;
+    grid-row: 4;
 }
-.red {
-  border: 3px solid red;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: capitalize;
-  color: red;
-
-
-text-align: center;}
-.green {
-  border: 3px solid green;
-  color: green;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: capitalize;
-  text-align: center;
-}
-.blue {
-  border: 3px solid blue;
-  color: blue;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: capitalize;
-  text-align: center;
+.blu3{
+    background-color: blue;
+    grid-area: lu;
+grid-column: 8/11;
+grid-row: 4;
 }
